@@ -19,4 +19,6 @@ const especieSchema = new Schema({
   }
 });
 
-export const Especie = model("Especie", especieSchema);
+const Especie = model("Especie", especieSchema);
+
+export default Especie

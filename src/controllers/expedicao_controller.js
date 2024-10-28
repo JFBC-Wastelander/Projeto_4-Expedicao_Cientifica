@@ -1,6 +1,6 @@
 import Expedicao from "../models/expedicao_model.js";
 
-export const store = async (req, res) => {
+const store = async (req, res) => {
   try {
     await Expedicao.create(req.body);
     res.status(201).json();
@@ -8,3 +8,5 @@ export const store = async (req, res) => {
     res.status(400).json(err);
   }
 };
+
+export default store

@@ -21,4 +21,6 @@ const expedicaoSchema = new Schema ({
     }
 })
 
-export const Expedicao = model("Expedicao", expedicaoSchema)
+const Expedicao = model("Expedicao", expedicaoSchema)
+
+export default Expedicao

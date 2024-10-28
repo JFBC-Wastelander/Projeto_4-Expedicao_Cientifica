@@ -15,4 +15,6 @@ const pesquisadorSchema = new Schema({
   },
 });
 
-export const Pesquisador = model("Pesquisador", pesquisadorSchema);
+const Pesquisador = model("Pesquisador", pesquisadorSchema);
+
+export default Pesquisador

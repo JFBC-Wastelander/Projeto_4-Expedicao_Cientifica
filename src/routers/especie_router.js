@@ -14,6 +14,6 @@ router.post("/", store)
 router.get("/", index)
 router.get("/:id", show)
 router.put("/:id", update)
-router.destroy("/:id", destroy)
+router.delete("/:id", destroy)
 
 export default router

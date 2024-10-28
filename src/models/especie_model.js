@@ -5,14 +5,18 @@ const especieSchema = new Schema({
     type: Schema.Types.String,
     required: true,
   },
-  fieldOfStudy: {
+  discorevyLocation: {
     type: Schema.Types.String,
     required: true,
   },
-  expeditionsParticipated: {
+  rarity: {
     type: Schema.Types.Number,
     required: true,
   },
+  documented: {
+    type: Schema.Types.Boolean,
+    default: false,
+  }
 });
 
 export const Especie = model("Especie", especieSchema);

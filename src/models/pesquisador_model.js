@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const especieSchema = new Schema({
+const pesquisadorSchema = new Schema({
   name: {
     type: Schema.Types.String,
     required: true,
@@ -15,4 +15,4 @@ const especieSchema = new Schema({
   },
 });
 
-export const Especie = model("Especie", especieSchema);
+export const Pesquisador = model("Pesquisador", pesquisadorSchema);

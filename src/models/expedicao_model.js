@@ -10,12 +10,12 @@ const expedicaoSchema = new Schema ({
         required: true,
     },
     participants: {
-        type: Schema.Types.ObjectId,
+        type: [Schema.Types.ObjectId],
         ref: "Pesquisador",
         required: true,
     },
     speciesFound: {
-        type: Schema.Types.ObjectId,
+        type: [Schema.Types.ObjectId],
         ref: "Especie",
         required: true,
     }

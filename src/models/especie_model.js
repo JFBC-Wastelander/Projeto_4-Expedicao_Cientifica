@@ -16,6 +16,7 @@ const especieSchema = new Schema({
   documented: {
     type: Schema.Types.Boolean,
     default: false,
+    required: true,
   }
 });
 
